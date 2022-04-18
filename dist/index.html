@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Cake shop</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main id="main">
+  <a href='https://postimg.cc/9DJbrjGG' target='_blank'><img class="logo" src='https://i.postimg.cc/9DJbrjGG/Whats-App-Image-2022-03-30-at-5-56-21-PM.jpg' border='0' alt='Whats-App-Image-2022-03-30-at-5-56-21-PM'/></a>
+<header class="header">
+<h1 id="title"> Make your cake order!</h1>
+<p id=description> Thank you for choosing Nompop to help with your sweet dreams! Please complete this form and we will get in touch within 48 hours regarding your order.</p>
+</header>
+  <div class="container">
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name here" required />
+  </div>
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email here" required />
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number of guests">Number of guests you will be serving</label>
+    <input type="number" name="guests-number" id="number" class="form-control" min="5" max="150" placeholder="Guests"/>
+  </div>
+  <div class="form-group">
+  <label for="start">Date of event</label>
+<input type="date" id="event" name="event-date"
+       value="2022-03-31"
+       min="2022-04-05" max="2023-12-31">
+  </div>  
+  <div class="form-group">
+    <label for="choose-flavor">Choose your cake batter flavor</label>
+    <select name="choose-flavor" id="dropdown" class="form-control" required>
+    <option disabled selected value>Select one</option>
+    <option value="chocolate">Chocolate</option>
+    <option value="red-velvet">Red Velvet</option>
+    <option value="vanilla">Vanilla</option>
+    <option value="tres-leches">Tres leches</option>
+    <option value="coffee">Coffee</option>
+    <option value="funfetti">Funfetti</option>
+    <option value="strawberry">Strawberry</option>
+    <option value="peanut-butter">Peanut Butter</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>Choose your filling <span class="clue">(Up to 3)</span></p>
+    <label>
+      <input
+      name="filling" value="cream-cheese" type="checkbox" class="input-checkbox"/>Cream cheese frosting</label>
+    <label>
+      <input
+      name="filling" value="passionfruit" type="checkbox" class="input-checkbox"/>Passion-fruit ganache</label>
+    <label>
+      <input
+      name="filling" value="raspberry" type="checkbox" class="input-checkbox"/>Raspberry jam</label>
+    <label>
+      <input
+      name="filling" value="arequipe" type="checkbox" class="input-checkbox"/>Dulce de leche</label>
+    <label>
+      <input
+      name="filling" value="blue-berry" type="checkbox" class="input-checkbox"/>Blue-berry buttercream</label>
+    <label>
+      <input
+      name="filling" value="vanilla" type="checkbox" class="input-checkbox"/>Vanilla buttercream</label>
+    <label>
+      <input
+      name="filling" value="chocolate-buttercream" type="checkbox" class="input-checkbox"/>Chocolate buttercream</label>
+   <label>
+      <input
+      name="filling" value="meringue-buttercream" type="checkbox" class="input-checkbox"/>Swiss-meringue buttercream</label>
+  </div>
+  <div class="form-group">
+    <label>Will you need delivery service?</label>
+    <label>
+      <input
+             name="delivery-service" value="yes" type="radio" class="input-radio" checked/>Yes</label>
+    <label>
+      <input
+             name="delivery-service" value="no" type="radio" class="input-radio" checked/>No</label>
+  </div>
+  <div class="form-group">
+       <label>Any additional request?</label>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your additional request here, if needed"></textarea>
+  </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+  </div>
+    </form>
+  </div> 
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

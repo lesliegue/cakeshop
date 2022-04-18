@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yeseva+One&display=swap');
+.header {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}  
+h1 {
+    font-family: 'Yeseva One', cursive;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.header {
+  padding: 30px;
+  margin: 0 auto;
+}
+.logo {
+  margin: 0 auto;
+  height: auto;
+  padding: 10px;
+  display: block;
+  border-radius: 50%;
+  width: 10%;
+}
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  border: 3px solid #fff3e0;
+  border-radius: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+.submit-button {
+  width: 30%;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #fff3e0;
+  background: #fed053;
+  font-family: Segoe UI;
+}
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 2;
+  margin: 10px;
+  display: block;
+}
+#main {
+  background: linear-gradient(180deg, #FEDCEC, #FE6973);
+  margin: 0 auto;
+  background-size: cover;
+}
+@media (max-width: 460px) {
+  .main {
+    margin: 0;
+  }
+}
